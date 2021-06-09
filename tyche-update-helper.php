@@ -1,7 +1,7 @@
 <?php
 /**
 Plugin Name: Tyche Update Helper
-Plugin URI: #
+Plugin URI: https://www.tychesoftwares.com/premium-woocommerce-plugins/
 Description: This plugin is used to activate the license.
 Version: 1.1.0
 Author: Tyche Softwares
@@ -57,7 +57,7 @@ add_action( 'http_api_curl', 'ts_modify_curl_request', 10, 3 );
  *
  * @version 1.1.0
  */
-function orddd_remove_transient_from_rest_api() {
+function tyh_remove_transient_code() {
 	$orddd_is_transient_removed = get_option('orddd_is_transient_removed');
 	$acpro_is_transient_removed = get_option('acpro_is_transient_removed');
 	$is_orddd_plugin_active     = is_plugin_active( 'order-delivery-date/order_delivery_date.php' );
@@ -88,4 +88,4 @@ function orddd_remove_transient_from_rest_api() {
 	}
 }
 
-add_action( 'admin_init', 'orddd_remove_transient_from_rest_api' );
+add_action( 'admin_init', 'tyh_remove_transient_code' );
