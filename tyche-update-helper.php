@@ -30,7 +30,7 @@ if ( ! class_exists( 'Puc_v4_Factory' ) ) {
  * @since 1.1.0
  */
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://staging.tychesoftwares.com/nitin/details.json',
+	'https://tychesoftwares.com/wp-content/uploads/details.json',
 	__FILE__,
 	'tyche-update-helper'
 );
